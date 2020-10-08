@@ -8,7 +8,7 @@ while C
     fprintf('Do you want to enter another student data [Y|N] \n');
     c = input('','s');
     
-    if c == 'Y' || c == "Yes" || c =='y'
+    if c == 'y' || c == 'Y' 
         C = 1;
     else
         C = 0;
