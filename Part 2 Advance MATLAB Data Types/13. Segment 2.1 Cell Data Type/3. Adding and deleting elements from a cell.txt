@@ -1,0 +1,16 @@
+ //Cell insertion
+
+>> C  = {1, 2, 3; 4, 5 ,6}
+>> C{3,3} = 9
+>> C{3,4} = 9           // Cell expansion
+
+//Cell deletion
+
+>> C{3,3} = []
+>> C{2,2} = []
+
+>>C(1:2,:) = []         //deleting rows completely
+>>C(:,2:3) = []         // deleting columns completely
+
+
+

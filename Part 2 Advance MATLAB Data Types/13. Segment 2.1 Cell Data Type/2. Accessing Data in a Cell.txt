@@ -1,0 +1,12 @@
+>> C = {1, 2, 3; 'text', rand(5,2,3), 'mycell'}
+>> C{1,1}   %single element
+>> C{2,2}(1,2,1)  %complex element matrix
+>> C{2,1}(1)  %complex element string , char 't'
+
+>> C(2,2)  %returns cell type
+>> C{2,2}  %returns contents of the cell type
+
+>> C = {1, 2, 3; 'text', {1,2,3}, 'mycell'}  %nested cell
+>> cellplot(C)
+>> C{2,2}{1}
+
