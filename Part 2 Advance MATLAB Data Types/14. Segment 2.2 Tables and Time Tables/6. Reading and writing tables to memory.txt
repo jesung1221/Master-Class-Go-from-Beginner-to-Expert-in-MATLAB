@@ -1,0 +1,17 @@
+>> X = readtable('d:\iris.csv');
+>> whos X
+
+>> X = readtable('d:\iris2.xlsx');
+
+>> X = readtable('d:\iris2.xlsx', 'ReadVariableNames', false);
+//won't read variable name
+
+>> X = readtable('d:\iris.txt', 'Delimiter', ', ');
+>> X = readtable('d:\iris.txt', 'Delimiter', '\');
+
+>> writetable(X, 'D:\table1.txt', 'Delimiter', ',');
+>> writetable(X, 'D:\table1.txt', 'Delimiter', ',', 'WriteVariableNames', false);
+>> writeable(T, 'D:\table2.txt', 'Delimiter', ',' ,'WriteRowNames', true);
+
+
+

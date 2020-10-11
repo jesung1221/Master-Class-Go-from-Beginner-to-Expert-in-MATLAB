@@ -1,0 +1,14 @@
+>> sortrows(T)
+//sort rows based on first column
+
+>> sortrows(T,'Weight')
+//ascending order based on data from Weight column
+
+>> sortrows(T, 'Weight', 'Descend')
+//descending order , based on Weight column
+
+>> sortrows(T, 'RowNames', 'Descend')
+>> sortrows(T, 'RowNames')
+
+>> sortrows(T, {'Height', 'Ages'}, {'Ascend', 'Descend'})
+//sort first based on height, then if there's a tie, then consdier Ages with descending criteria

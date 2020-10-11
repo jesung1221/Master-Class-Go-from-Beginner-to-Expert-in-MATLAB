@@ -1,0 +1,5 @@
+>> T.Properties.DimensionNames = {'Students' 'Data'}
+//row info -> students          col info -> data
+
+>> T.Properties
+>> T.Properties.Description = 'This table contain information about the students.. '
