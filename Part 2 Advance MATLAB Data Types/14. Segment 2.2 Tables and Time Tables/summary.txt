@@ -1,0 +1,33 @@
+
+Variables:
+
+    <strong>Ages_years</strong>: 4×1 double
+
+        Properties:
+            Description:  This variable contains ages in years
+        Values:
+
+            Min             15    
+            Median        51.5    
+            Max             78    
+
+    <strong>Height_foots</strong>: 4×1 double
+
+        Properties:
+            Description:  This variable contains height in foots
+        Values:
+
+            Min              5      
+            Median         8.5      
+            Max             10      
+
+    <strong>Weights_Kgs</strong>: 4×1 double
+
+        Properties:
+            Description:  This variable contains weight in kgs
+        Values:
+
+            Min             84     
+            Median         134     
+            Max            180     
+

@@ -1,0 +1,11 @@
+>> T2 = table(4,5,6)
+>> T(end+1, : ) = T2  // add one row
+>> T = T(1:end-1, : )  // delete one row
+
+>> T('Joe', : ) = [] //delete specific row
+
+>> temp = X.Sepallength > 5.0;
+>> X(temp,:) = []; //delete based on logical 1 or 0
+
+
+ 

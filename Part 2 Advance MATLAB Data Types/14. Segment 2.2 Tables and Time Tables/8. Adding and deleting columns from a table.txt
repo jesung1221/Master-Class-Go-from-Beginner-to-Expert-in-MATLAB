@@ -1,0 +1,6 @@
+>> X = readtable('./data.xslx');
+>> X.fifthcolumn = rand(150, 1); //add column
+>> X.sixthcolumn = rand(150, 1);
+>> X.sixthcolumn = [] //delete column 
+
+>> X = X(:, 1:end-1)    //another way to delete last column

@@ -1,0 +1,15 @@
+>> Ages = [15; 49; 78; 54];
+>> Height = [5; 9; 8; 10];
+>> Weight = [180; 156; 112; 84];
+>> T = table(Ages, Height, Weight);
+>> T.Properties.VariableNames = {'Ages_years' 'Height_foots' 'Weights_Kgs'}
+>> T.Properties.RowNames = {'Jack' 'Joe' 'Will' 'kim'}
+>> T.Properties.VariableDescriptions{'Ages_years'} = 'This variable contains ages in years';
+>> T.Properties.VariableDescriptions{'Height_foots'} = 'This variable contains height in foots';
+>> T.Properties.VariableDescriptions{'Weights_Kgs'} = 'This variable contains weight in kgs';
+
+>> X = evalc('summary(T)')
+>> fid = fopen('.\summary.txt', 'w');
+>> fprintf(fid, '%s', X);
+>> fclose(fid);
+ 

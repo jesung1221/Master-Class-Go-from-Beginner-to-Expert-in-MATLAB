@@ -1,9 +1,9 @@
->> X = readtable('d:\iris.csv');
+>> X = readtable('.\data.csv');
 >> whos X
 
->> X = readtable('d:\iris2.xlsx');
+>> X = readtable('.\data.xlsx');
 
->> X = readtable('d:\iris2.xlsx', 'ReadVariableNames', false);
+>> X = readtable('.\data.xlsx', 'ReadVariableNames', false);
 //won't read variable name
 
 >> X = readtable('d:\iris.txt', 'Delimiter', ', ');

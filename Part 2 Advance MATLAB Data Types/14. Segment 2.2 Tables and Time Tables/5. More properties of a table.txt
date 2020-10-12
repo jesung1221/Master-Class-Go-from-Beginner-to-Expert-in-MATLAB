@@ -3,3 +3,5 @@
 
 >> T.Properties
 >> T.Properties.Description = 'This table contain information about the students.. '
+
+>> T.Properties.
