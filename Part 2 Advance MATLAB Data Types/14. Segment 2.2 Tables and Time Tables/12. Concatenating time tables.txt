@@ -1,0 +1,10 @@
+>>[ourtimetable; ourtimetable]  //vertical concatenation - number of variable has to be the same
+
+>> ourtimetable2 = ourtimetable
+
+>> ourtimetable2.Properties.VariableNames = {'Var1', 'Var2', 'Var3'}
+>> [ourtimetable ourtimetable2]   //horizontal concatenation - timestamp has to be the same
+
+>> ourtimetable2
+>> ourtimetable2.Properties.VariableNames{'Var1'} = 'Timestamps'
+>> synchronize(ourtimetable, ourtimetable2)

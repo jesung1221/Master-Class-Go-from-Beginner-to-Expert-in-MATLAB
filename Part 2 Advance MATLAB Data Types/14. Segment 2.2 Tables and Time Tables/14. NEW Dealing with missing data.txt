@@ -1,0 +1,21 @@
+>> x = readtable('C:\iris.csv') //missing data in this data set
+>> x(1:5, :)     //check missing data - NaN, ' ' 
+
+>> y = rmmissing(x)      //remove all rows that have missing data
+>> y(1:5, :)
+
+>> y = rmmissing(x,2) // remove all columns that have missing data
+>> y(1:5, :)
+
+>> y = rmmissing(x, 'MinNumMissing', 3); 
+//remove all rows that contain at least 3 missing values
+
+>> y = rmmissing(x, 'MinNumMissing',2);
+
+>> y = rmmssing(x, 2, 'MinNumMissing',2);
+// operating on columns
+>> y = rmmissing(x, 2, 'MinNumMissing', 1);
+
+>> y = rmmissing(x, 'DataVariable', {'Sepal_Width', 'Petal_width'});
+>> y = rmmissing(x, 'DataVariable', {'Sepal_length'});
+

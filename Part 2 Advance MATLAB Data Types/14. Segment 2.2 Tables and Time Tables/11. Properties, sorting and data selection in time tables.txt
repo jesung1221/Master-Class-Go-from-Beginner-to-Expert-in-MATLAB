@@ -1,0 +1,22 @@
+ourtimetable.fifthcolumn = [4;5;6]
+
+ourtimetable.fifthcolumn = []
+
+sortrows(ourtimetable)
+sortrows(ourtimetable, 'temp')
+sortrows(ourtimetable, 'temp', 'Descend')
+
+ourtimetable.temp = ourtimetable.temp*8
+
+ourtimetable(1:2, 1:2)
+ourtimetable.Properties.VariableNames{'Var3'} = 'locations'
+ourtimetable.Properties.VariableNames = {'Timestamps', 'Temperature', 'Humiditylevel'}
+
+summary(ourtimetable)
+ourtimetable.Properties.Description = 'This timetables contains information regarding the temperatures'
+summary(ourtimetable)
+
+ourtimetable.Properties.VariableDescriptions = {' ', ' ', ' '}
+ourtimetable.Properties.VariableUnits = {' ',' ', ' '}
+
+X = evalc('summary(ourtimetable)')

@@ -1,0 +1,4 @@
+>> ourtimetable('08-Nov-2000', : )
+>> timerange = timerange('06-Nov-2000', '07-APR-2002')
+>> ourtimetable(timerange, :)
+
