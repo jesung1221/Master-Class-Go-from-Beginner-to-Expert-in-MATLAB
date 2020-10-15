@@ -1,0 +1,10 @@
+a = rand(3)
+
+Structure.a = a
+
+student = struct('dateofbirth', '', 'Age', {}, 'Subjects', {}, 'Grades', {})
+isfield(student, 'Age')
+
+isfield(student, {'Age' 'Grades' 'subject'})
+
+isstruct(student)
