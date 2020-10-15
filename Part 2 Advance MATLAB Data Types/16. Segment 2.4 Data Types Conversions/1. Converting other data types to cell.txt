@@ -1,0 +1,48 @@
+str -> cell 
+
+c = ['jan' ; 'feb'; 'mar']
+C = cellstr(c)
+
+S = [string('Hello'), string('world'), string('How are you')]
+C = cellstr(S)
+C{1}
+C{2}
+C{3}
+
+table -> cell
+
+Gender = {'M' 'M' 'F' 'F' 'F'}
+Age = [38; 43; 38; 40; 49]
+BloodPressure = [124; 109; 125; 117; 122]
+T = table(Gender, Age, BloodPressure)
+T.Properties.RowNames = {'Smith', 'Johnson', 'Williams', 'Jones', 'Brown'}
+
+T1 = table2cell(T)
+T1 = [T.Properties.VariableNames; T1]
+T.Properties.RowNames
+
+timetable -> table
+>> timesofday = datetime([2015,12,18; 2015,12,19; 2015,12,20])
+>> Temp = [37.3;39.1;42.3]
+>> Pressure = [29.4; 29.6; 30]
+>> TT = timetable(timesofday, Temp, Pressure, Precip)
+
+T = timetable2table(TT)
+T = timetable2table(TT, 'ConvertRowTimes', false)
+T2 = table2cell(T)
+T2 = [T.Properties.VariableNames; T2]
+
+structure -> cell
+>> s(1).category = 'tree'
+>> s(1).height = [37.4]
+>> s(1).name = 'birch'
+>> s(2).category = 'branch'
+>> s(2).height = 3
+>> s(2).name = 'jae'
+c = struct2cell(s)
+
+container -> cell
+rainfallMap = containers.Map( )
+C = {keys(rainfallMap), values(rainfallMap)}
+
+
