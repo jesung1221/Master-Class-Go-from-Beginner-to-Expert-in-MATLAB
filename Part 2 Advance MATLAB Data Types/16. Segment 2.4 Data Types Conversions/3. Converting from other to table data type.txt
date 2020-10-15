@@ -1,0 +1,17 @@
+struct2table
+
+s(1).name = 'nouman'
+s(1).age = 34
+s(1).grade = 'A+'
+
+s(2).name = 'Azam'
+s(2).age = 38
+s(2).grade = 'A'
+
+struct2table(s)
+T = struct2table(s)
+T.Properties.RowNames = T.name
+T.name = []
+T = struct2table(s, 'RowNames', {'student 1' 'student 2'})
+
+containers.Map -> cell -> table
